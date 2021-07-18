@@ -1,0 +1,41 @@
+# LISTS
+
+# liczby, które są podzielne przez 7
+# ale nie są wielokrotnością 5
+# i z zakresu pomiędzy 200 i 320
+# oraz ponumerowane (enumerate) od 1
+
+# numbers which are divisible by 7
+# but are not a multiple of 5
+# between 200 and 320
+# and numbered (enumerate) from 1
+
+newList = []
+for i in range(200, 321):
+    if (i % 7 == 0) and (i % 5 != 0):
+        newList.append(str(i))
+
+enumerateL = list(enumerate(newList, 1))
+print(enumerateL)
+
+# sum of elements from newList:
+
+print("Sum of numbers: ")
+print(len(newList))
+
+# another way to print position of every value:
+
+for pos, value in enumerateL:
+    print('Position ', pos, 'value', value)
+
+# zip and many tuples:
+
+tup1 = ('Saturn', 'Moon', 'Venus');
+tup2 = (1, 2, 3);
+tup3 = "a", "b", "c";
+
+planets = list(zip(tup2, tup3, tup1))
+print(planets)
+
+for a, b, c in planets:
+    print('Number', a, b, 'planet is', c + '.')
