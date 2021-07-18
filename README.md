@@ -3,3 +3,4 @@
 # Python_projects_exercises
 
 program1 - lists
+program2 - nested loops
