@@ -1,0 +1,44 @@
+# NESTED LOOPS
+
+# tuplety
+# z elementów listy A oraz B
+# więc 6 * 6 = 36 elementów powinno się wyświetlić
+
+# tuplets
+# from listA and listB elements
+# so 6 * 6 = 36 elements should be printed
+
+listA = list(range(6))
+listB = list(range(6))
+
+print(listA, listB)
+print('-' * 30)
+
+example = []
+for a in listA:
+    for b in listB:
+        example.append((a,b))
+print(example)
+print('-' * 30)
+
+# to samo co wyżej ale krótsze rozwiązanie:
+# same as above but shorter solution:
+
+example = [(a, b) for a in listA for b in listB]
+print(example)
+print('-' * 30)
+
+# z listA pobierane tylko wartości nieparzyste
+# z listB pobierane tylko wartości parzyste
+# with listA printed only odd values
+# with listB printed only even values
+
+example = [(a, b) for a in listA for b in listB if a % 2 == 1 and b % 2 == 0]
+print(example)
+print('-' * 30)
+
+# to samo co wyżej ale 'słownik':
+# same as above but 'dictionary':
+
+example = {a: b for a in listA for b in listB if a % 2 == 1 and b % 2 == 0}
+print(example)
