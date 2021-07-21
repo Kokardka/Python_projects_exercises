@@ -1,0 +1,37 @@
+'''
+exec() wykonuje dowolny kod zawarty
+w łańcuchu, tak jakby znajdował się w miejscu
+tej instrukcji ale ne zwraca żadnej wartości
+(zawsze w outpucie będzie wynik: None)
+------------------------------------------------
+exec() executes any code contained
+in the string as if it were in the place
+of its instructions but does not return any value
+(always in the output the result will be: None)
+'''
+
+var_x = 10
+var_y = 20
+char_z = 'a'
+
+# source = 'var_x = 4'
+source = '''
+new_var = 1
+for i in range(var_x):
+    print('-' * i)
+    new_var += i
+'''
+
+result = exec(source)
+print(result)
+
+print(var_x)
+print(new_var)
+
+source = input("Enter your expression: ")
+# for example enter:
+# var_x * 3
+# or:
+# char_z + 'la'
+
+print(eval(source))
