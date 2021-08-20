@@ -1,4 +1,4 @@
-![1](https://user-images.githubusercontent.com/72028760/126071682-3b81f429-3ab3-4c94-9fdb-855d062e2e9b.jpg)
+![1](https://user-images.githubusercontent.com/72028760/130260519-7b3ebf82-02d7-49ca-9a25-3e0a0b00e44f.jpg)
 
 # Python_projects_exercises
 
